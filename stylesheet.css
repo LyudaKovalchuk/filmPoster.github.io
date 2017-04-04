@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.navigation_bar{
+  background-color: #000;
+  color : #fff;
+  overflow: auto;
+}
+nav{
+  float: right;
+
+}
+nav ul {
+  color: #fff;
+  display: inline-flex;
+  list-style-type: none;
+  margin-right: 50px;
+}
+nav ul li{
+  padding: 0 25px ;
+}
+nav ul li a{
+  text-decoration: none;
+  color : white;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 20px;
+}
+.brand {
+  display: inline-flex;
+}
+.brand a {
+  color : white;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px 0px 0 44px;
+}
+nav ul li ul {
+  display: none;
+}
