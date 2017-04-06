@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  color: white;
+  font-family: 'Roboto';
 }
 .navigation_bar{
   background-color: #000;
@@ -38,6 +38,58 @@ nav ul li a{
   font-size: 20px;
   margin: 15px 0px 0 44px;
 }
+.arrowHead {
+  vertical-align: text-bottom;
+}
 nav ul li ul {
   display: none;
+}
+.containerFilm .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
+}
+.containerFilm > h1 {
+  color: black;
+  font-family: Roboto italic;
+  font-size: 30px;
+  font-style: italic;
+  border-bottom: 4px solid #FFD100;
+  padding: 0 0 10px 50px;
+}
+.smallContainer {
+  width: 25%;
+
+
+}
+.film-poster {
+  text-align: center;
+  padding: 10px 40px;
+}
+.film-poster img{
+  width: 100%;
+}
+.film-name_ganre{
+  padding: 0px 40px;
+}
+.likeFilm {
+  padding: 0px 40px;
+}
+.film-name_ganre > h6{
+  margin: 10px 0;
+  font-size: 20px;
+}
+.film-name_ganre > h6{
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Roboto' sans-serif;
+}
+.film-name_ganre h6:first-child+h6{
+  font-weight: bold;
+}
+.film-name_ganre p{
+  color: red;
 }
