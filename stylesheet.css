@@ -21,6 +21,25 @@ nav ul {
 nav ul li{
   padding: 0 25px ;
 }
+nav ul li:hover .dropdown  {
+      display: block;
+      position: absolute;
+      background-color:gainsboro;
+      padding: 0;
+      top: 40px;
+      border-radius: 3px;
+}
+.dropdown li{
+  padding: 5px 0;
+}
+.dropdown li:hover{
+  text-decoration: underline;
+}
+.dropdown li a {
+  color: black;
+  padding: 8px;
+  font-size: 14px;
+}
 nav ul li a{
   text-decoration: none;
   color : white;
@@ -61,8 +80,9 @@ nav ul li ul {
 }
 .smallContainer {
   width: 25%;
-
-
+}
+.capture {
+  border-bottom: 2px solid #FFD100;
 }
 .film-poster {
   text-align: center;
@@ -71,11 +91,15 @@ nav ul li ul {
 .film-poster img{
   width: 100%;
 }
+.capture {
+  margin: 40px;
+  height: 140px;
+  position: relative;
+}
 .film-name_ganre{
-  padding: 0px 40px;
 }
 .likeFilm {
-  padding: 0px 40px;
+
 }
 .film-name_ganre > h6{
   margin: 10px 0;
@@ -92,4 +116,86 @@ nav ul li ul {
 }
 .film-name_ganre p{
   color: red;
+}
+.heart {
+position: absolute;
+bottom: 0px;
+right: 0px;
+cursor: pointer;
+}
+.keepInTouch {
+  background-color: #E64E0F;
+}
+.keepInTouch h1:first-child{
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+form {
+
+}
+.inputs_text {
+  display: flex;
+  justify-content: center;
+}
+.inputs_signUp {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.inputs_text input {
+  margin: 10px;
+  background : transparent;
+  border-width: 1px;
+  border-color: transparent transparent white transparent;
+  color: white;
+  font-size: 16px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  font-size: 14px;
+  opacity: 0.9;
+}
+input:focus {
+    outline:none;
+}
+.inputs_signUp input {
+width: 150px;
+padding: 5px;
+background: white;
+color: #E64E0F;
+font-family: Roboto sans-serif;
+border: none;
+font-size: 18px;
+cursor: pointer;
+border-radius: 2px;
+}
+footer {
+  background-color: black;
+  color: white;
+  overflow: auto;
+}
+footer > p{
+  margin: 0;
+  padding: 0 25px;
+  align-items: center;
+  height: 66px;
+  display: inline-flex;
+  font-weight: bold;
+}
+.socialNetworks {
+  float: right;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.socialNetworks a{
+  padding: 0 20px;
+
+}
+.socialNetworks a img {
+  height: 38px;
+  vertical-align: middle;
+
 }
