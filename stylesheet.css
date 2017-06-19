@@ -10,13 +10,17 @@ body{
 }
 nav{
   float: right;
-
+}
+.collapse-list {
+  float: right;
 }
 nav ul {
   color: #fff;
-  display: inline-flex;
+  display: flex;
   list-style-type: none;
-  margin-right: 50px;
+  height: 56px;
+  align-items: center;
+  margin: 0 56px 0 0;
 }
 nav ul li{
   padding: 0 25px ;
@@ -28,6 +32,7 @@ nav ul li:hover .dropdown  {
       padding: 0;
       top: 40px;
       border-radius: 3px;
+      height: 85px;
 }
 .dropdown li{
   padding: 5px 0;
@@ -47,15 +52,64 @@ nav ul li a{
   font-weight: bold;
   font-size: 20px;
 }
+@media screen and (max-width: 750px) {
+    .list{
+        display: none;
+        height: 100%;
+    }
+    .colappsible-navbar{
+      display: flex!important;
+    }
+    .colappsible-navbar:hover{
+      cursor: pointer;
+    }
+    .collapse-list{
+      right: 25px;
+    }
+    .collapse-list:hover{
+      height: 130px;
+    }
+    .collapse-list:hover .list{
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 44px;
+      right: -56px;
+    }
+    .collapse-list:hover .list li{
+      text-align: end;
+      padding-top: 4px;
+      position: relative;
+    }
+    .collapse-list:hover .list li .arrowHead2{
+      display: inline-flex;
+    }
+    .collapse-list:hover .list .dropdown{
+      right: 76px;
+      top: 5px;
+    }
+    .collapse-list:hover .arrowHead{
+      display: none;
+    }
+    .inputs_text {
+      flex-flow: column;
+    }
+
+
+}
+
+
 .brand {
-  display: inline-flex;
+display: inline-flex;
+height: 56px;
+align-items: center;
 }
 .brand a {
   color : white;
   font-family: Roboto;
   font-weight: bold;
   font-size: 20px;
-  margin: 15px 0px 0 44px;
+  margin: 0 0 0 44px;
 }
 .arrowHead {
   vertical-align: text-bottom;
@@ -80,6 +134,24 @@ nav ul li ul {
 }
 .smallContainer {
   width: 25%;
+}
+@media screen and (max-width: 1000px) {
+    .smallContainer {
+        width : 33%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .smallContainer {
+        width : 50%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .smallContainer {
+        width : 100%;
+    }
+    .socialNetworks a {
+      padding: 0 10px!important;
+  }
 }
 .capture {
   border-bottom: 2px solid #FFD100;
@@ -192,10 +264,48 @@ footer > p{
 }
 .socialNetworks a{
   padding: 0 20px;
-
 }
 .socialNetworks a img {
   height: 38px;
   vertical-align: middle;
-
+}
+.colappsible-navbar{
+  display: none;
+  flex-direction: column;
+  float: right;
+  padding: 25px 25px 0 0;
+}
+.colappsible-navbar span{
+  border-top: 1px solid white;
+  width: 30px;
+  height: 5px;
+}
+#vk_groups{
+  margin: 0 auto;
+padding: 20px;
+}
+.arrowHead2{
+  padding: 0 10px;
+  display: none;
+}
+.copyright {
+  display: inline-flex;
+  height: 66px;
+  padding-left: 5px;
+  align-items: center;
+}
+canvas{
+  display: none;
+}
+#myCanvas {
+  display: inline-block;
+}
+.yelowLines{
+  display: flex;
+}
+.filmCaption {
+  display: inline-block;
+  vertical-align: top;
+  padding: 40px;
+  font-weight: bolder;
 }
